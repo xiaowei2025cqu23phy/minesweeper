@@ -1,6 +1,6 @@
 # 💣 扫雷游戏 Minesweeper
 
-一个跨平台、多语言实现的扫雷游戏集合，包含 **Python (Pygame)**、**C++ (Qt 图形界面)**、**C++ (控制台终端)** 和 **HTML/CSS/JS (网页版)** 四种版本。
+一个跨平台、多语言实现的扫雷游戏集合，包含 **Python (Pygame)**、**C++ (Qt 图形界面)** 和 **HTML/CSS/JS (网页版)** 三种版本。
 
 ---
 
@@ -11,12 +11,9 @@ minesweeper/
 ├── scanmines.py                 # Python Pygame 图形版
 ├── scanmines.html               # HTML/CSS/JS 网页版（双击浏览器打开）
 ├── cpp-minesweeper/
-│   ├── main.cpp                 # C++ 控制台终端版
-│   ├── CMakeLists.txt           # 终端版 CMake 构建
-│   ├── build_and_run_msys2.bat  # MSYS2 一键编译运行脚本
-│   ├── qt-minesweeper/
-│   │   ├── main.cpp             # C++ Qt6 图形界面版
-│   │   └── CMakeLists.txt       # Qt 版 CMake 构建
+│   └── qt-minesweeper/
+│       ├── main.cpp             # C++ Qt6 图形界面版
+│       └── CMakeLists.txt       # Qt 版 CMake 构建
 ├── .gitignore
 └── README.md
 ```
@@ -40,21 +37,7 @@ python scanmines.py
 
 无需安装，双击 `scanmines.html` 用浏览器打开即可游玩。
 
-### 3. C++ 控制台终端版（`cpp-minesweeper/main.cpp`）
-
-纯控制台交互，支持 `r row col` 揭示、`f row col` 插旗、`restart` 和 `quit`。
-
-**编译运行（MSYS2 + MinGW）：**
-
-```powershell
-cd cpp-minesweeper
-C:\msys64\mingw64\bin\g++ -std=c++17 -o minesweeper.exe main.cpp
-.\minesweeper.exe
-```
-
-或双击 `build_and_run_msys2.bat` 自动完成编译与运行。
-
-### 4. C++ Qt6 图形界面版（`cpp-minesweeper/qt-minesweeper/`）
+### 3. C++ Qt6 图形界面版（`cpp-minesweeper/qt-minesweeper/`）
 
 基于 Qt6 Widgets 的图形扫雷，支持鼠标左右键操作、计时器、重启按钮。
 
@@ -82,7 +65,6 @@ C:\msys64\mingw64\bin\g++ -std=c++17 ^
 |------|------|---------|------|
 | Pygame 版 | Python | Pygame 2.x | 跨平台 |
 | 网页版 | HTML/CSS/JS | — | 浏览器 |
-| 终端版 | C++17 | — | Windows/Linux/macOS |
 | Qt 版 | C++17 | Qt6 Widgets | Windows（需 Qt6 环境） |
 
 ---

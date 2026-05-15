@@ -1,4 +1,6 @@
 # Build outputs
+*.exe
+*.exe~
 *.obj
 *.o
 *.lib
