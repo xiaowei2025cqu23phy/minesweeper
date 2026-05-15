@@ -1,0 +1,23 @@
+# Build outputs
+*.obj
+*.o
+*.lib
+*.dll
+*.a
+build/
+cmake-build-*/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+
+# OS
+Thumbs.db
+.DS_Store
